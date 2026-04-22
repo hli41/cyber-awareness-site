@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cybersecurity Awareness | Social Engineering Quiz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+</head>
 
+<body>
+
+<header class="site-header">
+    <h1>Social Engineering Quiz</h1>
+    <nav>
+        <a href="../index.html">Home</a>       
+        <div class="dropdown">
+            <a href="../quizzes.html">Quizzes</a>
+            <div class="dropdown-content">
+                <a href="password.html">Passwords</a>
+                <a href="malware.html">Malware</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="quiz">
+        <h2>Social Engineering Quiz</h2>
+
+        <form class="quiz-card">
+            <p class="question">
+                What is social engineering?
+            </p>
+            <label class="option">
+                <input type="radio" name="q1" value="option1">Manipulating people to get confidential information
+            </label>
+            <label class="option">
+                <input type="radio" name="q1" value="option2">Malicious Software
+            </label>
+            <label class="option">
+                <input type="radio" name="q1" value="option3">Creating social norms
+            </label>
+            <label class="option">
+                <input type="radio" name="q1" value="option4">Monitoring network activity
+            </label>
+            <p class="question">
+                What do attackers use to make their social engineering attacks more convincing?
+            </p>
+            <label class="option">
+                <input type="radio" name="q2" value="option1">Packet Sniffer
+            </label>
+            <label class="option">
+                <input type="radio" name="q2" value="option2">Brute Force
+            </label>
+            <label class="option">
+                <input type="radio" name="q2" value="option3">Personal Information
+            </label>
+            <label class="option">
+                <input type="radio" name="q2" value="option4">Intrusion Detection System (IDS)
+            </label>
+            <p class="question">
+                Which attack is NOT social engineering?
+            </p>
+            <label class="option">
+                <input type="radio" name="q3" value="option1">Phishing
+            </label>
+            <label class="option">
+                <input type="radio" name="q3" value="option2">Vishing
+            </label>
+            <label class="option">
+                <input type="radio" name="q3" value="option3">Tailgating
+            </label>
+            <label class="option">
+                <input type="radio" name="q3" value="option4">Distrubuted Denial of Service (DDoS)
+            </label>
+            <p class="question">
+                Phishing is one of the most common social engineering attacks.
+            </p>
+            <label class="option">
+                <input type="radio" name="q4" value="option1">True
+            </label>
+            <label class="option">
+                <input type="radio" name="q4" value="option2">False
+            </label>
+            <p class="question">
+                Which is NOT an indicator of phishing?
+            </p>
+            <label class="option">
+                <input type="radio" name="q5" value="option1">Weird/Non-Corresponding Email
+            </label>
+            <label class="option">
+                <input type="radio" name="q5" value="option2">Grammar/Spelling Mistakes
+            </label>
+            <label class="option">
+                <input type="radio" name="q5" value="option3">Email Domain that matches trusted source
+            </label>
+            <label class="option">
+                <input type="radio" name="q5" value="option4">Suspicous Links
+            </label>
+            <button class="btn secondary" type="submit">
+                Submit
+            </button>
+            <p id="result" aria-live="polite"></p>
+        </form>
+    </section>
+</main>
+<script>
+    const correctAnswers = {
+        q1: "option1",
+        q2: "option3",
+        q3: "option4",
+        q4: "option1",
+        q5: "option3"
+    };
+</script>
+<script src="../functions.js"></script>
+</body>
+</html>
